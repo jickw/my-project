@@ -12,25 +12,26 @@
 #     for i in argv:
 #         count = count + 1
 #     return count
+#
+# def add(name, sex, phone):
+#     '''100行代码'''
+#     pass
+#
+#
+# def remove(name, sex, phone):
+#     '''100行代码'''
+#     pass
+#
+#
+# def update(name, sex, phone):
+#     '''100行代码'''
+#     pass
+#
+#
+# def find(name, sex, phone):
+#     '''100行代码'''
+#     pass
 
-def add(name, sex, phone):
-    '''100行代码'''
-    pass
-
-
-def remove(name, sex, phone):
-    '''100行代码'''
-    pass
-
-
-def update(name, sex, phone):
-    '''100行代码'''
-    pass
-
-
-def find(name, sex, phone):
-    '''100行代码'''
-    pass
 
 # 类： 具有相同属性的一类事物
 # 人类：
@@ -40,6 +41,34 @@ def find(name, sex, phone):
 #
 
 class Person:
-    pass
+    '''类体： 两部分 ：变量部分，方法（函数）部分'''
+    mind = '思想'
+    animal = '高级动物'
+    faith = '信仰'
 
+    def work(self):
+        print('人类都会工作。。。')
 
+    def shopp(self):
+        print('人类可以消费')
+# 类名的角度
+    # 操作类中的静态变量
+        # 1. Person.__dict__  查询类中的所有内容 （不能进行增删改操作）
+
+# print(Person.__dict__)
+# print(Person.__dict__['faith'])
+# Person.__dict__['mind'] = '无脑'
+# print(Person.__dict__['mind'])
+        # 2. 万能的. dot  对类中的单个的变量进行增删改查，用万能的 ‘.’
+
+# print(Person.mind)
+# print(Person.animal)  # 查
+
+# Person.money = '运用货币'  # 增
+# Person.mind = '无脑的'  # 改
+# del Person.mind  # 删
+# print(Person.__dict__)
+    # 操作类中的方法
+# print(Person.__dict__)
+Person.work(Person)
+# 对象的角度
