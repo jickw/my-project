@@ -32,19 +32,30 @@ __mtime__ = '2018/12/23'
 # @方法名.setter  装饰器：修改被property装饰的属性的时候会调用这个装饰器装饰的方法，除了self之外还有一个参数，被修改的值
 # @方法名.deletter  装饰器： 当要删除被property装饰的属性的时候会调用这个装饰器装饰的方法
 
-class Circle:
-    def __init__(self, r):
-        self.r = r
-        # self.area = self.r**2*3.14
+# class Circle:
+#     def __init__(self, r):
+#         self.r = r
+#         # self.area = self.r**2*3.14
+#
+#     @property
+#     def area(self):
+#         return self.r**2*3.14
+#
+#
+# c = Circle(5)
+# print(c.area)
+# c.r = 10
+# print(c.area)
+#
 
-    @property
-    def area(self):
-        return self.r**2*3.14
 
+# 反射
+# 从某个指定的命名空间中，用字符串数据类型的变量名来获取变量的值
 
-c = Circle(5)
-print(c.area)
-c.r = 10
-print(c.area)
+# 类名反射
+# 对象反射
+# 模块
+# 自己的模块
+
 
 
